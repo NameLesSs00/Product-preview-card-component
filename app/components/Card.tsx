@@ -1,7 +1,7 @@
 import Image from "next/image";
-import productImage from "/app/images/image-product-mobile.jpg";
-import productImageDeskTop from "@/app/images/image-product-desktop.jpg"
-import cartIcon from "/app/images/icon-cart.svg";
+import productImage from "@/app/images/image-product-mobile.jpg";
+import productImageDeskTop from "@/app/images/image-product-desktop.jpg";
+import cartIcon from "@/app/images/icon-cart.svg";
 import { cardData } from "../data/dataFCard";
 //done?
 interface Product {
@@ -20,15 +20,15 @@ export const Card = () => {
         className="rounded-t-lg sm:hidden"
         src={productImage}
         alt="A photo of the product"
-        // width={500}
-        // height={400}
+        width={500}
+        height={400}
       />
       <Image
         className="rounded-l-lg hidden sm:block"
         src={productImageDeskTop}
         alt="A photo of the product"
-        // width={500}
-        // height={400}
+        width={500}
+        height={400}
       />
       <div className="p-4 font-montserrat m-auto ">
         <h3 className="text-[hsl(228,12%,48%)] text-sm mb-1 ">
