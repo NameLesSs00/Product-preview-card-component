@@ -3,7 +3,7 @@ import productImage from "/app/images/image-product-mobile.jpg";
 import productImageDeskTop from "@/app/images/image-product-desktop.jpg"
 import cartIcon from "/app/images/icon-cart.svg";
 import { cardData } from "../data/dataFCard";
-
+//done?
 interface Product {
   type: string;
   title: string;
