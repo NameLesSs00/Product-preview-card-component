@@ -15,7 +15,7 @@ interface Product {
 const product: Product = cardData[0];
 export const Card = () => {
   return (
-    <div className="bg-white rounded-xl sm:flex max-w-[375px] sm:max-w-[40vw] ">
+    <div className="bg-white rounded-xl sm:flex max-w-[375px] sm:max-w-[600px] ">
       <Image
         className="rounded-t-lg sm:hidden"
         src={productImage}
@@ -30,11 +30,11 @@ export const Card = () => {
         // width={500}
         // height={400}
       />
-      <div className="p-4 font-montserrat sm:pl-5 m-auto ">
-        <h3 className="text-[hsl(228,12%,48%)] text-sm mb-1">
+      <div className="p-4 font-montserrat m-auto ">
+        <h3 className="text-[hsl(228,12%,48%)] text-sm mb-1 ">
           {product.type.split("").join(" ").toUpperCase()}
         </h3>
-        <h1 className="text-[2rem] font-bold text-[hsl(212,21%,14%)] font-fraunces ">
+        <h1 className="text-[2rem] font-bold text-[hsl(212,21%,14%)] font-fraunces">
           {product.title}
         </h1>
         <p className="text-[hsl(228,12%,48%)] my-3">{product.description}</p>

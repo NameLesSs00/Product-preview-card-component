@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.variable} ${fraunces.variable}`}>
-      <body className="flex flex-col items-center justify-center bg-[hsl(30,38%,92%)] p-3 min-h-screen h-[100%] overflow-y-auto "
+      <body className="flex flex-col items-center justify-center bg-[hsl(30,38%,92%)] p-3 min-h-[100%] h-[100%] sm:h-screen "
       >
         {children}
       </body>
